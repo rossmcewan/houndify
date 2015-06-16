@@ -1,6 +1,6 @@
 {
   "name": "houndify",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "API client for Houndify",
   "main": "lib/index.js",
   "scripts": {
