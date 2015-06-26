@@ -13,11 +13,17 @@ var client = new Houndify({
     clientKey: 'your-client-key',
     userId: 'your-client-userid',
   },
+  // Global RequestInfo, sent with every request
   requestInfo: {
-    UserID: '12345'
+    ClientID: 'Some application name'
   }
 });
 
-client.query('What time is it in Tokyo?', function(err, res) {
+var input = 'What time is it in Tokyo?';
+var querySpecificRequestInfo = {
+  UserId: '12345'
+};
+
+client.query(input, querySpecificRequestInfo, function(err, res) {
 ...
 ```
